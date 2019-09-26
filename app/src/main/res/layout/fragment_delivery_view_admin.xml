@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/ProductstxtView"
+                android:layout_width="255dp"
+                android:layout_height="83dp"
+                android:layout_marginStart="65dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="8dp"
+                android:text="@string/delivery"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="50sp" />
+
+            <EditText
+                android:id="@+id/txtProID"
+                android:layout_width="178dp"
+                android:layout_height="37dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="8dp"
+                android:background="@color/cardview_light_background"
+                android:ems="10"
+                android:hint="@string/proID"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/txtCusName"
+                android:layout_width="332dp"
+                android:layout_height="39dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="8dp"
+                android:background="@color/cardview_light_background"
+                android:ems="10"
+                android:hint="@string/cusName"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/txtCusAddress"
+                android:layout_width="334dp"
+                android:layout_height="39dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="8dp"
+                android:background="@color/cardview_light_background"
+                android:ems="10"
+                android:hint="@string/address"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/txtPhone"
+                android:layout_width="334dp"
+                android:layout_height="39dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="8dp"
+                android:background="@color/cardview_light_background"
+                android:ems="10"
+                android:hint="@string/phone"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/txtProName"
+                android:layout_width="334dp"
+                android:layout_height="39dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@color/cardview_light_background"
+                android:ems="10"
+                android:hint="@string/proName"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/txtQty"
+                android:layout_width="334dp"
+                android:layout_height="39dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="8dp"
+                android:background="@color/cardview_light_background"
+                android:ems="10"
+                android:hint="@string/qty"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/txtPrice"
+                android:layout_width="334dp"
+                android:layout_height="39dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="8dp"
+                android:background="@color/cardview_light_background"
+                android:ems="10"
+                android:hint="@string/txtPrice"
+                android:inputType="textPersonName" />
+
+            <Button
+                android:id="@+id/btnsearch"
+                android:layout_width="123dp"
+                android:layout_height="38dp"
+                android:layout_marginStart="225dp"
+                android:layout_marginTop="-360dp"
+                android:layout_marginEnd="60dp"
+                android:background="@color/design_default_color_primary_dark"
+                android:text="@android:string/search_go"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btnUpdateDelivery"
+                android:layout_width="359dp"
+                android:layout_height="38dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="350dp"
+                android:layout_marginEnd="8dp"
+                android:background="@color/colorAccent"
+                android:text="@string/updateDelivery"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/btnDeleteDelivery"
+                android:layout_width="359dp"
+                android:layout_height="38dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="8dp"
+                android:background="@color/colorAccent"
+                android:text="@string/deleteDelivery"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/btnViewDelivery"
+                android:layout_width="359dp"
+                android:layout_height="38dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="8dp"
+                android:background="@color/colorAccent"
+                android:text="@string/viewAllDelivery"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/btnClear"
+                android:layout_width="128dp"
+                android:layout_height="56dp"
+                android:layout_marginStart="125dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="16dp"
+                android:background="@android:color/holo_red_dark"
+                android:text="@string/btnclear"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
